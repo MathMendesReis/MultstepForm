@@ -10,7 +10,7 @@ export default function StepOne() {
     return (
         <form
             className='max-w-[33rem] min-h-[20.5rem] mx-auto'
-            action='/empresa'
+            id='form-step-one'
             onSubmit={form.handleSubmit(onSubmit)}>
             <div className='flex flex-col gap-1 my-2'>
                 <p className='antialiased text-zinc-950 font-bold text-base capitalize'> Nome da empresa</p>

@@ -10,7 +10,7 @@ import App from './App';
 import StepOne from './steps/step-one';
 import FooterStep from './components/footer-step';
 
-const router = createBrowserRouter([
+export const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,

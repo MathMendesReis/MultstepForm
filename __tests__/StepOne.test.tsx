@@ -43,8 +43,8 @@ describe('StepOne', () => {
         fireEvent.change(getByPlaceholderText('Qual é o nome da empresa'), { target: { value: 'Teste' } });
         expect(getByPlaceholderText('Qual é o nome da empresa')).toHaveValue('Teste');
 
-        fireEvent.change(getByPlaceholderText('Digite o número de colaboradores'), { target: { value: '100' } });
-        expect(getByPlaceholderText('Digite o número de colaboradores')).toHaveValue('100');
+        fireEvent.change(getByPlaceholderText('Digite o número de colaboradores'), { target: { value: 100 } });
+        expect(getByPlaceholderText('Digite o número de colaboradores')).toHaveValue(100);
 
         fireEvent.change(getByPlaceholderText('Fale um pouco sobre seus produtos ou serviços'), { target: { value: 'Nós vendemos produtos de alta qualidade.' } });
         expect(getByPlaceholderText('Fale um pouco sobre seus produtos ou serviços')).toHaveValue('Nós vendemos produtos de alta qualidade.');
